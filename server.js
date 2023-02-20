@@ -29,6 +29,9 @@ app.use(fileUpload({
     useTempFiles : true
 }))
 
+app("/",(req, res)=>{
+    res.send("Hello from the server");
+})
 
 // ########################################################################
 // routes
